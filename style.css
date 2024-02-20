@@ -1,4 +1,51 @@
 
+.nav-drawer {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-color: #333;
+  transition: left 0.3s ease;
+}
+
+.nav-drawer.open {
+  left: 0;
+}
+
+.nav-drawer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-drawer ul li {
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-drawer ul li:hover {
+  background-color: #555;
+}
+
+/* CSS pour le bouton d'ouverture du drawer */
+.open-drawer-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* fin */
 .navbar-nav .nav-link {
   transition: color 0.3s ease;
 
@@ -142,7 +189,7 @@ float: right;
 
 #block_card{
 
-    display: flex;
+ display: flex;
    
 }
 
@@ -198,7 +245,9 @@ float: right;
     text-decoration: underline;
   }
   
+#block_card{
 
+}
 
 @media  screen and (max-width: 600px) {
     
@@ -209,6 +258,36 @@ float: right;
 
       width: 160px;
     }
+    .salutation{
+
+      margin-left: 10px;
+      display: none;
+    }
+
+    .about{
+
+      margin-left: 1%;
+      color: #007bff;
+    }
+    .namexx{
+
+      font-size: 15px;
+    }
+    .description{
+
+      font-size: 12px;
+    }
+    .arte-produit{
+
+      margin-top: 10px;
+    }
+
+    #block_card{
+
+      display: block;
+      margin-top: 10px;
+        
+     }
 
     .btn{
 
@@ -219,9 +298,8 @@ float: right;
     }
     .carte-produit{
 
-        width: 130px;
-        height: 115px;
-       
+  
+     
     }
     .container-fluid_2{
 
